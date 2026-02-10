@@ -10,6 +10,7 @@ class PipelineConfig:
     max_chunk_chars_for_llm: int = 6000
 
     chunk_strategy: str = "semantic"  # semantic | sections | sliding | pages
+    #for more accuracy ~100 for speed ~10
     max_total_chunks: int = 40
     prioritize_top_k: int = 28
 
@@ -30,3 +31,4 @@ class PipelineConfig:
     neo4j_url: str = os.getenv("NEO4J_URL", "")
     neo4j_user: str =os.getenv("NEO4J_USER", "")
     neo4j_password: str = os.getenv("NEO4J_PASSWORD", "")
+
