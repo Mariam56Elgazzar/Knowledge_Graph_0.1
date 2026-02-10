@@ -19,7 +19,7 @@ class PipelineConfig:
     semantic_max_chunk_chars: int = 3400
     semantic_overlap_paragraphs: int = 1
     semantic_sim_threshold: float = 0.78
-
+    #max concurrent explain how many call requests to the LLM can be made at the same time ~1 slow
     max_concurrent_chunks: int = 6
     max_retries: int = 3
     retry_base_delay: float = 1.0
