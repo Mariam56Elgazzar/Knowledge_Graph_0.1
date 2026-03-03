@@ -1,77 +1,31 @@
-# 🧠 Data2Dash GraphRAG Engine
-
-> GraphRAG-powered Knowledge Graph Builder for Scientific Papers using LLMs, Semantic Chunking, and Neo4j.
+🧠 Data2Dash GraphRAG Engine
+GraphRAG-powered Knowledge Graph Builder for Scientific Papers using LLMs, Semantic Chunking, and Neo4j.
 
 Data2Dash GraphRAG Engine transforms unstructured research papers into structured, queryable knowledge graphs — enabling intelligent retrieval, relationship discovery, and explainable AI answers.
 
----
+🚀 Features
+✅ Automatic entity & relationship extraction
+✅ Semantic chunking for high-quality context
+✅ Knowledge Graph generation
+✅ GraphRAG query engine
+✅ Neo4j integration
+✅ Vector search for hybrid retrieval
+✅ Async extraction pipeline
+✅ Production-ready modular architecture
+✅ Interactive graph visualization
 
-## 🚀 Features
-
-✅ Automatic entity & relationship extraction  
-✅ Semantic chunking for high-quality context  
-✅ Knowledge Graph generation  
-✅ GraphRAG query engine  
-✅ Neo4j integration  
-✅ Vector search for hybrid retrieval  
-✅ Async extraction pipeline  
-✅ Production-ready modular architecture  
-✅ Interactive graph visualization  
-
----
-
-## 🏗️ Architecture
-
-PDF / Text
-↓
-Preprocessing 
-↓
-Semantic Chunking / custom chunking
-↓
-LLM Extraction (Entities → Relations)
-↓
-Knowledge Graph
-↓
-Neo4j + Vector Store
-↓
-GraphRAG Query Engine
-
+🏗️ Architecture
+PDF / Text ↓ Preprocessing ↓ Semantic Chunking / custom chunking ↓ LLM Extraction (Entities → Relations) ↓ Knowledge Graph ↓ Neo4j + Vector Store ↓ GraphRAG Query Engine
 
 This design minimizes hallucinations while maximizing factual grounding.
 
----
-
-## 📂 Project Structure
-
-ai/knowledge_graph
-│
-├── app
-│ ├── core
-│ ├── pipelines
-│ ├── knowledge_graph
-│ │ ├── chunking
-│ │ ├── extraction
-│ │ ├── graph_rag
-│ │ ├── ingestion
-│ │ ├── preprocessing
-│ │ ├── store
-│ │ └── visualization
-│ └── ui
-│
-├── data
-├── outputs
-└── requirements.txt
-
+📂 Project Structure
+ai/knowledge_graph │ ├── app │ ├── core │ ├── pipelines │ ├── knowledge_graph │ │ ├── chunking │ │ ├── extraction │ │ ├── graph_rag │ │ ├── ingestion │ │ ├── preprocessing │ │ ├── store │ │ └── visualization │ └── ui │ ├── data ├── outputs └── requirements.txt
 
 Built using clean architecture principles for scalability.
 
----
-
-## ⚡ Quick Start
-
-### 1️⃣ Clone the repository
-
-```bash
+⚡ Quick Start
+1️⃣ Clone the repository
 git clone https://github.com/Data2Dash/Data2Dash-ai.git
 cd Data2Dash-ai/ai/knowledge_graph
 2️⃣ Install dependencies
